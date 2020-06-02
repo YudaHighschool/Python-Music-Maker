@@ -14,7 +14,7 @@
 #     synth.triggerAttackRelease('C4', '8n')
 
 # document["box1"].bind("click", action1)
-
+ s
 
 from browser import document, window
 
