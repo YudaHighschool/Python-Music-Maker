@@ -1,12 +1,15 @@
 # 導入 browser 的 document 及 html 物件
-from browser import document, alert, console
+from browser import document, alert, console, load
+load("https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.3/Tone.js")
+Tone = window.Tone
+
+synth = new Tone.Synth().toMaster()
+//play music
+synth.triggerAttackRelease('C4', '8n')
+
 import math
 import winsound
 import time
-
-
-
-
 
 
 labels = ['a','a#','b','c','c#','d','d#','e','f','f#','g','g#']
@@ -42,5 +45,5 @@ def action1(ev):
       'c4 C4 c4 d4 e4 r d4 r c4 e4 d4 d4 c4 r r r '
       'd4 d4 d4 d4 A3 r a3 r d4 c4 B3 a3 g3 r r r '
       'c4 c4 c4 d4 e4 r d4 r c4 e4 d4 d4 c4 r r r ', 180 )
-      
+
 document["box1"].bind("click", action1)
