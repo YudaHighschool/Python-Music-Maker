@@ -1,5 +1,5 @@
 # 導入 browser 的 document 及 html 物件
-from browser import document, html
+from browser import document, html, alert, console
 
 # # 建立計算機 HTML Table 版型
 # # |   結果    | c |
@@ -48,7 +48,7 @@ from browser import document, html
 def action1(event):
     alert("Hello !")
     alert(event)
-    browser.console.log(event)
+    console.log(event)
 
 button1 = document["box1"]
 button1.bind("click", action1)
