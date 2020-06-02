@@ -46,7 +46,7 @@ from browser import document, html
 
 
 def action1(event):
-    console.log(event)
+    browser.console.log(event)
 
 button1 = document["box1"]
 button1.bind("click", action1)
