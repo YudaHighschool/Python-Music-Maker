@@ -46,6 +46,8 @@ from browser import document, html
 
 
 def action1(event):
+    alert("Hello !")
+    alert(event)
     browser.console.log(event)
 
 button1 = document["box1"]
