@@ -44,7 +44,7 @@ from browser import document, html
 # for button in document.select("td"):
 #     button.bind("click", action)
 
-button1 = document["#box1"]
+button1 = document["box1"]
 button1.bind("click", action1)
 def action(event):
     console.log(event)
