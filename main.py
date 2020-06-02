@@ -44,6 +44,6 @@ def action(event):
 for button in document.select("td"):
     button.bind("click", action)
 
-# document.select("#box1").bind("click", action1)
-# def action(event):
-#     console.log(event)
+document.select("#box1").bind("click", action1)
+def action(event):
+    console.log(event)
