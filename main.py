@@ -6,5 +6,6 @@ def action1(ev):
     print("Hello2 !")
 
 document["box1"].bind("click", action1)
+document["box1"].bind("click", lambda ev: print("Hellox !"))
 
 
